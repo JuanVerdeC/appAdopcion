@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:usesCleartextTraffic="true"
@@ -12,7 +15,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppAdopcion"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".NavegacionActivity"
+            android:exported="false"
+            android:label="@string/title_activity_navegacion"
+            android:theme="@style/Theme.AppAdopcion.NoActionBar" />
         <activity
             android:name=".RegistroActivity"
             android:exported="false" />
