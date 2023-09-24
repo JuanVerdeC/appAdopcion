@@ -3,6 +3,7 @@ package com.upc.appadopcion;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -24,6 +25,8 @@ public class LoginActivity extends AppCompatActivity {
     FirebaseDatabase database;
     DatabaseReference reference;
     FirebaseAuth firebaseAuth;
+
+    ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btnLogin);
         txtEmailLogin = findViewById(R.id.txtEmailLogin);
         txtContraseniaLogin = findViewById(R.id.txtContraseniaLogin);
+        progressDialog = new ProgressDialog(this);
 
         btnRegistrar.setOnClickListener(view -> {
             Intent intent = new Intent(this, RegistroActivity.class);
@@ -70,14 +74,18 @@ public class LoginActivity extends AppCompatActivity {
         String email = txtEmailLogin.getText().toString();
         String contrasenia = txtContraseniaLogin.getText().toString();
 
+        progressDialog.setMessage("Autenticando el usuario");
+        progressDialog.show();
         firebaseAuth.signInWithEmailAndPassword(email,contrasenia).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
-                    //redigir a la pantalla principal
+                    Intent intent = new Intent(LoginActivity.this, NavegacionActivity.class);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(LoginActivity.this, "El email o la contraseña son incorrectas", Toast.LENGTH_SHORT).show();
                 }
+                progressDialog.dismiss();
             }
         });
     }
