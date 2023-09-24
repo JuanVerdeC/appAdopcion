@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">appAdopcion</string>
+
+    <string-array name="generos">
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string name="titulo_genero">Géneros</string>
+
 </resources>
