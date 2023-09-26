@@ -53,6 +53,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
     private Boolean validarDatos() {
         boolean valida = true;
         String email = txtEmailLogin.getText().toString();
@@ -96,4 +97,6 @@ public class LoginActivity extends AppCompatActivity {
         reference = database.getReference();
         firebaseAuth = FirebaseAuth.getInstance();
     }
+
+
 }

@@ -12,7 +12,9 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.upc.appadopcion.databinding.FragmentGalleryBinding;
 
-public class GalleryFragment extends Fragment {
+public class
+
+GalleryFragment extends Fragment {
 
     private FragmentGalleryBinding binding;
 
