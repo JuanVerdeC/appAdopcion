@@ -16,6 +16,7 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+
             android:name=".PublicacionDetalladaActivity"
             android:exported="false" />
         <activity
@@ -31,6 +32,14 @@
             </intent-filter>
         </activity>
         <activity
+
+            android:name=".ActivityListar"
+            android:exported="false" />
+        <activity
+            android:name=".Registrar_mascotaActivity"
+            android:exported="false" />
+        <activity
+
             android:name=".NavegacionActivity"
             android:exported="false"
             android:label="@string/title_activity_navegacion"
