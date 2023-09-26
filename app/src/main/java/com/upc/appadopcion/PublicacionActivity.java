@@ -50,7 +50,7 @@ public class PublicacionActivity extends AppCompatActivity {
         String nombre = txtNombreMascota.getText().toString();
         String edad = txtEdadMascota.getText().toString();
         String descripcion = txtDescripcionMascota.getText().toString();
-       
+
 
         if(nombre.equals("")){
             txtNombreMascota.setError("Obligatorio");
