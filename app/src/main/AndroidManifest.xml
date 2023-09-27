@@ -36,7 +36,7 @@
             android:name=".ActivityListar"
             android:exported="false" />
         <activity
-            android:name=".Registrar_mascotaActivity"
+            android:name=".Registrar_adopcionActivity"
             android:exported="false" />
         <activity
 

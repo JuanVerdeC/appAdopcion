@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="30dp"
-    tools:context=".Registrar_mascotaActivity">
+    tools:context=".Registrar_adopcionActivity">
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Registrar Mascota"
+        android:text="Registrar Adopcion"
         android:textColor="#FFC107"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -32,12 +32,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <EditText
-        android:id="@+id/txtNombreMacota"
+        android:id="@+id/txtNombreA"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="5dp"
         android:ems="10"
-        android:hint="Ingrese el nombre de la mascota"
+        android:hint="Ingrese su nombre completo"
         android:inputType="text"
         android:textColorHint="#9F9A9A"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,18 +49,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Raza:"
+        android:text="DNI:"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNombreMacota" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreA" />
 
     <EditText
-        android:id="@+id/txtRazaMascota"
+        android:id="@+id/txtDNI"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="5dp"
         android:ems="10"
-        android:hint="Ingrese la raza de la mascota"
+        android:hint="Ingrese su DNI"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,20 +71,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Edad:"
+        android:text="Fecha de nacimiento:"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtRazaMascota" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDNI" />
 
     <EditText
-        android:id="@+id/txtEdadMascota"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="5dp"
+        android:id="@+id/txtNacimiento"
+        android:layout_width="175dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Ingrese la edad de la mascota"
+        android:hint="Fecha de nacimiento"
         android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -93,18 +92,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Peso:"
+        android:text="Correo electronico:"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEdadMascota" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNacimiento" />
 
     <EditText
-        android:id="@+id/txtPeso"
+        android:id="@+id/txtCorreo"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="5dp"
         android:ems="10"
-        android:hint="Ingrese el peso de la mascota"
+        android:hint="Ingrese su correo"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -115,18 +114,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Enfermedades:"
+        android:text="Direccion"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPeso" />
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
 
     <EditText
-        android:id="@+id/txtEnfermedades"
+        android:id="@+id/txtDireccion"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:layout_marginTop="5dp"
         android:ems="10"
-        android:hint="Ingrese las enfermedades de la mascota"
+        android:hint="Ingrese su direccion"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -137,44 +136,71 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Historia:"
+        android:text="Distrito"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEnfermedades" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDireccion" />
 
     <EditText
-        android:id="@+id/txtHistoria"
+        android:id="@+id/txtDistrito"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="48dp"
         android:layout_marginTop="5dp"
         android:ems="10"
-        android:hint="Ingrese la historia de la mascota"
+        android:hint="Ingrese su distrito"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <Button
-        android:id="@+id/btnRegistrarM"
+        android:id="@+id/btnRegistrarA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#8BC34A"
-        android:text="Registrar"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FF9800"
+        android:text="Enviar solicitud"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtHistoria" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDistrito" />
 
     <Button
-        android:id="@+id/btnCancelarM"
+        android:id="@+id/btnCancelarA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#8BC34A"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FF9800"
         android:text="Cancelar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnRegistrarM"
-        app:layout_constraintTop_toBottomOf="@+id/txtHistoria" />
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toEndOf="@+id/btnRegistrarA"
+        app:layout_constraintTop_toBottomOf="@+id/txtDistrito" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Celular:"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/txtDNI" />
+
+    <EditText
+        android:id="@+id/txtCelular"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Celular"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toEndOf="@+id/txtNacimiento"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
