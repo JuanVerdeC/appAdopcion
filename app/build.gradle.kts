@@ -51,4 +51,5 @@ dependencies {
     implementation("com.google.firebase:firebase-database:20.2.2")
     implementation("com.google.firebase:firebase-auth")
     implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
+    implementation("com.google.android.gms:play-services-maps:18.1.0")
 }
